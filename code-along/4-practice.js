@@ -15,6 +15,13 @@ let blockchain = [
   { fromUser: 'anthony', toUser: 'nate', amount: 150 },
   { fromUser: 'ben', toUser: 'nate', amount: 2000 }
 ]
+for (let i = 0; i < blockchain.length; i++) {
+  let transaction = blockchain[i]
+  console.log(`${transaction.fromUser} transferred ${transaction.amount} KelloggCoin to {transaction.toUser}`)
+}
+//console.log(`${blockchain[0].fromUser} transferred ${blockchain[0].amount} KelloggCoin to ${blockchain[0].toUser}`)
+
+
 
 // Loop through the blockchain, printing the details of each 
 // transaction with each iteration of the loop, e.g. 
